@@ -10,10 +10,27 @@
 <div class="logo"><image src="./assets/logo.png" width="100px" height="68px"></div>
 <div class="topnav">
 <a href="#" class="active">Home</a>
-<a href="">About us</a>
-<a href="">Opinions</a>
-<a href="">Ask doc</a>
-<a href="./pages/signup.html">Sign up</a>
+<a href="#">About us</a>
+<a href="#">Opinions</a>
+<a href="#">Ask doc</a>
+<a href="#" onclick="document.getElementById('showmodal').style.display='block'">Sign up</a>
+</div>
+</div>
+<div id="showmodal" class="signupmodal">
+<div class="signupcard">
+<span id="close" onclick="document.getElementById('showmodal').style.display='none'" class="close" title="close Modal">&times;</span>
+<h1>SignUp Form</h1>
+<label> <b> First Name:</b></label>
+<input class="inputsignup" type="text" placeholder="Enter your first name" name="fname" />
+<label> <b> Last Name:</b></label>
+<input class="inputsignup" type="text" placeholder="Enter your last name" name="lname" />
+<label> <b> Email:</b></label>
+<input class="inputsignup" type="text" placeholder="Enter your email" name="ename" />
+<label> <b> Password:</b></label>
+<input class="inputsignup" type="password" placeholder="Enter your Password" name="password" />
+<label> <b> Confirm Password:</b></label>
+<input class="inputsignup" type="password" placeholder="Confirm your Password" name="password" />
+<button type="submit" class="signupbutton"> SignUp</button> <br/>
 </div>
 </div>
 <div class="content">
@@ -27,11 +44,33 @@
 <a href="">Adulthood</a>
 <a href="">Firstborn</a>
 </div>
-<div class="search">
-    <input type="text" placeholder="Search..">
-    </div>
+<div class="searchbox">
+<form><input type="text" placeholder="Search.." name="search" class="input-search"></form>
 </div>
-
+</div>
+<div class="carcont">
+<div class="cardcontainer">
+    <div class="card-content">
+    <img src="./assets/champagne.png" alt="champ" class="card-img">
+    </div>
+    <div class="blogcontent">
+    <h2>Good time with friend</h2>
+    <p> True friends always support each other even during the hardest of times.<span class="car-text">A true friend is one who feels happy for our success, on the other hand, who feel gloomy for our failures.</span></p>
+    <a href="./pages/viewoneblog.html">Read More</a>
+    </div>
+    </div>
+    <div class="cardcontainer">
+        <div class="card-content">
+        <img src="./assets/champagne.png" alt="champ" class="card-img">
+        </div>
+        <div class="blogcontent">
+        <h2>Good time with friend</h2>
+        <p> True friends always support each other even during the hardest of times.<span class="car-text">A true friend is one who feels happy for our success, on the other hand, who feel gloomy for our failures.</span></p>
+        <a href="#">Read More</a>
+        </div>
+        </div>
+         </div> 
+         <script src="./js/script.js" ></script>   
 </body>
 
 

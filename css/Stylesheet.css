@@ -30,8 +30,10 @@ a.active{
 .content{
 width: 100%;
 height: 100vh;
-display: flex;
 background: #C4C4C4;
+margin-top: -20px;
+display: block;
+
 }
 h1{
     font-size: 30px;
@@ -55,16 +57,107 @@ font-family: monospace, sans-serif;
   background: #68CB90;  
  
 }
-.search [type=text] {
-    float: center;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    font-family: monospace; 
+.searchbox{
+   width: 100%;
+   height: 50px;
+   margin-top: -700px;
+
+}
+
+.input-search{
+    font-family: monospace;
     background: #68CB90;
-  }
-.search input[type=text] {
-    border: 1px solid #ccc;
+    width: 30%;
+    height: 30px;
+    margin-left: 30%;
+    border-radius: 30px;
+}
+.cardcontainer{
+width: 400px;
+height: 30vh;
+padding:10px;
+display: flex;
+flex-wrap: wrap;
+/*background: #68CB90;*/
+margin-top: -650px;
+margin-left: 250px;
+}
+.card-content{
+margin: 10px;
+width: 100%;
+height: 200px;
+background: #68CB90;
+border-radius: 30px;
+box-shadow: 0px 4px 8px #1E684E;
+}
+.card-img{
+    width: 40%;
+    height: 200px;
+    border-radius: 30px;
+    float: left;
+}
+.car-text{
+    display:none ;
+}
+.blogcontent{
+    width: 60%;
+    margin-left: 147px;
+    margin-top: -220px;
+    text-align: right;
+}
+.carcont{
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+.onecard-content{
+    text-align: center;
+    margin-top: -90vh;
+}
+.textreadmore{
+    margin-left: 15%;
+}
+.signupmodal{
+    width:100%;
+    height:120vh;
+    background:rgba(0, 0, 0, 0.795);
+    position:fixed;
+    display:none;
+    margin-top: -100px;
+}
+.signupcard{
+    margin:2% 10% 10% 35%;
+    width:30%;
+    height: 100vh;
+    background:grey;
+    box-shadow:0px 4px 8px #68CB90;
+    text-align:center;
+    padding:20px;
+
+}
+.inputsignup{
+    width:80%;
+    height:30px;
+    padding:10px 20px;
+    border:1px solid rgb(185, 182, 182);
+    margin:20px;
+}
+
+.signupbutton{
+    width:90%;
+    height:50px;
+    background:#68CB90;
+    cursor:pointer;
+}
+
+.close{
+    position:absolute;
+    margin:-20px 20px 0px 10%;
+    color:black;
+    font-size:35px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.close:hover{
+    color:red;
 }
